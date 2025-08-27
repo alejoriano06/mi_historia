@@ -6,117 +6,149 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    background: #f3f4f6;
-    color: #333;
+    background: #0f172a;
+    color: #f1f5f9;
     line-height: 1.6;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
+/* Contenedor principal */
 section {
     max-width: 900px;
-    margin: 30px auto;
-    padding: 20px;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    padding: 40px;
+    background: linear-gradient(135deg, #1e293b, #111827);
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Imagen más grande y resaltada */
 section img {
-    width: 180px;
+    width: 350px;
     height: auto;
     border-radius: 50%;
-    border: 4px solid #4f46e5;
-    margin-bottom: 15px;
-    transition: transform 0.3s ease;
+    border: 8px solid #ff0000;
+    margin-bottom: 25px;
+    box-shadow: 0 0 30px #ff0000;
+    z-index: 1;
+    position: relative;
 }
 
-section img:hover {
-    transform: scale(1.05);
-}
-
+/* Títulos */
 section h1 {
-    font-size: 2rem;
-    color: #4f46e5;
+    font-size: 2.8rem;
+    color: #ff0000;
     margin-bottom: 15px;
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.7);
+    position: relative;
+    z-index: 1;
 }
 
+h2 {
+    margin: 25px 0 10px;
+    color: #ff0000;
+    font-size: 1.9rem;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    position: relative;
+    z-index: 1;
+}
+
+/* Texto */
 section p {
-    color: #555;
-    margin-bottom: 15px;
-    padding: 0 10px;
+    color: #e2e8f0;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    font-size: 1rem;
+    position: relative;
+    z-index: 1;
 }
 
+/* Botón GitHub */
 section a {
     display: inline-block;
     text-decoration: none;
-    background: #3b82f6;
+    background: linear-gradient(90deg, #ff0000, #b30000);
     color: white;
-    padding: 10px 18px;
-    border-radius: 8px;
+    padding: 14px 28px;
+    border-radius: 12px;
     font-weight: bold;
-    margin-bottom: 20px;
-    transition: background 0.3s ease;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 section a:hover {
-    background: #2563eb;
+    background: linear-gradient(90deg, #b30000, #ff0000);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.9);
+    transform: scale(1.08);
 }
 
+/* Lista de características */
 ul {
     list-style: none;
     margin: 15px 0;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 14px;
+    position: relative;
+    z-index: 1;
 }
 
 ul li {
-    background: #f59e0b;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 8px;
+    background: #ff0000;
+    color: #f1f5f9;
+    padding: 10px 20px;
+    border-radius: 10px;
     font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
-h2 {
-    margin: 20px 0 10px;
-    color: #4f46e5;
-    font-size: 1.5rem;
+ul li:hover {
+    background: #b30000;
+    transform: scale(1.08);
 }
 
+/* Separador */
 section hr {
-    margin: 20px 0;
-    border: 0;
+    margin: 25px 0;
+    border: none;
     height: 2px;
-    background: #e5e7eb;
+    background: #334155;
 }
 
-section ul {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-    padding-left: 20px;
-}
-
+/* Footer */
 footer {
-    background: #111827;
-    color: #d1d5db;
+    background: #0f172a;
+    color: #94a3b8;
     text-align: center;
-    padding: 15px;
+    padding: 18px;
     margin-top: auto;
     font-size: 0.9rem;
+    border-top: 2px solid #1e293b;
+}
+
+footer p {
+    margin-bottom: 8px;
 }
 
 footer a {
-    color: #f59e0b;
+    color: #ff0000;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #ff4d4d;
 }
+
+
